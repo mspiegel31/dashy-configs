@@ -1,19 +1,10 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
 
 pageInfo:
-  title: Spoton
-  description: Links for work
+  title: Spoton Service Monitoring
   footerText: ''
 
 sections:
-  - name: Monitoring
-    icon: fas fa-network-wired
-    items:
-      - title: core-services clickboard
-        icon: fas fa-dog
-        url: >-
-          https://app.datadoghq.com/dashboard/ga9-46m-hq2/clickboard-core?from_ts=1663700105960&to_ts=1663703705960&live=true
-            
   - name: identity-bridge
     items:
       - title: staging url
