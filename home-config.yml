@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
+
+pageInfo:
+  title: Homelab
+  description: Homelab links
+  footerText: ''
+
+sections:
+  - name: Network
+    icon: fas fa-network-wired
+    items:
+      - title: OpenWRT
+        icon: hl-openwrt
+        url: https://192.168.1.1
+      - title: UniFi dashboard
+        icon: hl-unifi
+        url: https://192.168.1.166:8443/
+  - name: App Servers
+    icon: fas fa-server
+    items:
+      - title: App Server
+        icon: hl-portainer
+        url: https://192.168.1.201:9443/
+      - title: Basic Infrastructure
+        icon: hl-portainer
+        url: https://192.168.1.45:9443/
+  - name: Virtualization / Infrastructure
+    icon: fas fa-database
+    items:
+      - title: PVE embedded
+        icon: hl-proxmox
+        url: https://pve-embedded.localdomain:8006/
+        provider: Proxmox
+      - title: PVE small
+        icon: hl-proxmox
+        url: https://192.168.1.42:8006/
+        provider: Proxmox
+      - title: PVE big
+        icon: hl-proxmox
+        url: https://192.168.1.40:8006/
+        provider: Proxmox
+      - title: True NAS
+        icon: hl-truenas
+        url: https://192.168.1.238/
+      - title: Pi KVM
+        icon: hl-pikvm
+        url: http://pikvm.localdomain/
+  - name: Applications
+    icon: fas fa-folder-plus
+    items:
+      - title: Home Assistant
+        icon: hl-home-assistant
+        url: http://192.168.1.189:8123/
+      - title: Photo Prism
+        icon: hl-photoprism
+        url: http://192.168.1.201:2342/browse
+      - title: syncthing
+        icon: hl-syncthing
+        url: http://192.168.1.201:8384/
+      - title: PiHole 1
+        icon: hl-pihole
+        url: http://192.168.1.170/admin/
+      - title: PiHole 2
+        icon: hl-pihole
+        url: http://192.168.1.171/admin/
+      - title: HiFiberry
+        icon: fab fa-raspberry-pi
+        url: http://hifiberry.localdomain/
