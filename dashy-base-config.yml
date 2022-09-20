@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
+appConfig:
+  theme: nord
+  customColors:
+    material-dark-original:
+      primary: '#f36558'
+      background: '#39434C'
+      background-darker: '#eb615c'
+      material-light: '#f36558'
+      item-text-color: '#ff948a'
+      curve-factor: 5px
+  enableErrorReporting: true
+  layout: auto
+  iconSize: medium
+  language: en
+
+pages:
+  - name: Work
+    path: 'https://gist.githubusercontent.com/mspiegel31/bbd37d9649954c26db3c20dc84db38d3/raw'
+
+  - name: Homelab
+    path: 'https://gist.githubusercontent.com/mspiegel31/a830e2c52df7944930ca75b67daf3c5b/raw'
