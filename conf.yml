@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
+
 appConfig:
   theme: nord
   customColors:
@@ -13,6 +14,9 @@ appConfig:
   layout: auto
   iconSize: medium
   language: en
+  enableFontAwesome: true
+  routingMode: hash
+
 
 pages:
   - name: Work
