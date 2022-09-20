@@ -2,3 +2,11 @@ pageInfo:
   title: Spoton
   description: Links for work
   footerText: ''
+
+sections:
+  - name: Monitoring
+    icon: fas fa-network-wired
+    items:
+      - title: core-services clickboard
+        icon: https://upload.wikimedia.org/wikipedia/en/7/7e/Datadog_logo.svg
+        url: https://app.datadoghq.com/dashboard/ga9-46m-hq2/clickboard-core?from_ts=1663700105960&to_ts=1663703705960&live=true
