@@ -17,6 +17,10 @@ appConfig:
   enableFontAwesome: true
   routingMode: hash
 
+pageInfo:
+  title: Links!
+  description: Links for things
+  footerText: ''
 
 pages:
   - name: Work

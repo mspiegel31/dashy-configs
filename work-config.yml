@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
+
 pageInfo:
   title: Spoton
   description: Links for work
@@ -8,5 +10,28 @@ sections:
     icon: fas fa-network-wired
     items:
       - title: core-services clickboard
-        icon: https://upload.wikimedia.org/wikipedia/en/7/7e/Datadog_logo.svg
-        url: https://app.datadoghq.com/dashboard/ga9-46m-hq2/clickboard-core?from_ts=1663700105960&to_ts=1663703705960&live=true
+        icon: fas fa-dog
+        url: >-
+          https://app.datadoghq.com/dashboard/ga9-46m-hq2/clickboard-core?from_ts=1663700105960&to_ts=1663703705960&live=true
+      - title: identity bridge
+        subItems: 
+          - title: staging logs
+            url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aidentity-bridge
+            
+  - name: identity-bridge
+    items:
+      - title: staging url
+        icon: fas fa-external-link-alt
+        url: https://app.datadoghq.com/u?source=hyperlink&target=https%3A%2F%2Fidentity-bridge-staging.qa.spoton.sh%2Fdocs&author=datadog-user&hash=3VSNE6j%2B%2BD5s6uW76XzHrDGyB47LHXE3ixRaauaBO%2Bg%3D
+
+      - title: prod url
+        icon: fas fas fa-external-link-alt
+      
+      - title: staging logs
+        icon: fas fa-dog
+        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aidentity-bridge
+
+
+      - title: prod logs
+        icon: fas fa-dog
+        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Aidentity-bridge
