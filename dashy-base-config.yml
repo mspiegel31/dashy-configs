@@ -16,7 +16,7 @@ appConfig:
 
 pages:
   - name: Work
-    path: 'https://gist.githubusercontent.com/mspiegel31/bbd37d9649954c26db3c20dc84db38d3/raw'
+    path: work-config.yml
 
   - name: Homelab
-    path: 'https://gist.githubusercontent.com/mspiegel31/a830e2c52df7944930ca75b67daf3c5b/raw'
+    path: home-config.yml
