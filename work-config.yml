@@ -16,6 +16,7 @@ sections:
             
 
   - name: Prod service urls
+    icon: fas fa-link
     displayData: &datagroup
       sortBy: alphabetical
       cols: 1
@@ -24,6 +25,7 @@ sections:
         icon: fas fa-external-link-alt
 
   - name: Staging service urls
+    icon: fas fa-link
     displayData: *datagroup
     items:
       - title: identity-bridge
