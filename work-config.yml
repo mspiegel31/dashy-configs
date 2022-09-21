@@ -14,20 +14,34 @@ sections:
         url: >-
           https://app.datadoghq.com/dashboard/ga9-46m-hq2/clickboard-core?from_ts=1663700105960&to_ts=1663703705960&live=true
             
-  - name: identity-bridge
-    items:
-      - title: staging url
-        icon: fas fa-external-link-alt
-        url: https://app.datadoghq.com/u?source=hyperlink&target=https%3A%2F%2Fidentity-bridge-staging.qa.spoton.sh%2Fdocs&author=datadog-user&hash=3VSNE6j%2B%2BD5s6uW76XzHrDGyB47LHXE3ixRaauaBO%2Bg%3D
 
-      - title: prod url
-        icon: fas fas fa-external-link-alt
-      
-      - title: staging logs
+  - name: Prod service urls
+    displayData: &datagroup
+      sortBy: alphabetical
+      cols: 1
+    items:
+      - title: identity-bridge
+        icon: fas fa-external-link-alt
+
+  - name: Staging service urls
+    displayData: *datagroup
+    items:
+      - title: identity-bridge
+        icon: fas fa-external-link-alt
+        url: https://identity-bridge-staging.qa.spoton.sh/docs
+        
+  - name: Staging logs
+    icon: fas fa-dog
+    displayData: *datagroup
+    items:
+      - title: identity-bridge
         icon: fas fa-dog
         url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aidentity-bridge
-
-
-      - title: prod logs
+  
+  - name: Prod logs
+    icon: fas fa-dog
+    displayData: *datagroup
+    items:
+      - title: identity-bridge
         icon: fas fa-dog
         url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Aidentity-bridge

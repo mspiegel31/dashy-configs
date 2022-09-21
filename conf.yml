@@ -16,6 +16,7 @@ appConfig:
   language: en
   enableFontAwesome: true
   routingMode: hash
+  
 
 pageInfo:
   title: Links!
@@ -28,3 +29,6 @@ pages:
 
   - name: Homelab
     path: home-config.yml
+
+sections: []
+  

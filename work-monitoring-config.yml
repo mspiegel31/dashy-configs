@@ -10,7 +10,7 @@ sections:
       - title: staging url
         icon: fas fa-external-link-alt
         url: https://app.datadoghq.com/u?source=hyperlink&target=https%3A%2F%2Fidentity-bridge-staging.qa.spoton.sh%2Fdocs&author=datadog-user&hash=3VSNE6j%2B%2BD5s6uW76XzHrDGyB47LHXE3ixRaauaBO%2Bg%3D
-
+        
       - title: prod url
         icon: fas fas fa-external-link-alt
       
