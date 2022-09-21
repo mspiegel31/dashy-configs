@@ -16,7 +16,6 @@ appConfig:
   language: en
   enableFontAwesome: true
   routingMode: hash
-  
 
 pageInfo:
   title: Links!
@@ -24,6 +23,9 @@ pageInfo:
   footerText: ''
 
 pages:
+  - name: Work Service Monitoring
+    path: work-monitoring-config.yml
+
   - name: Work
     path: work-config.yml
 

@@ -1,24 +1,39 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
 
 pageInfo:
-  title: Spoton Service Monitoring
+  title: Work Service Monitoring
   footerText: ''
 
 sections:
-  - name: identity-bridge
+  - name: Prod service urls
+    icon: fas fa-link
+    displayData: &datagroup
+      sortBy: alphabetical
+      cols: 1
     items:
-      - title: staging url
+      - title: identity-bridge
         icon: fas fa-external-link-alt
-        url: https://app.datadoghq.com/u?source=hyperlink&target=https%3A%2F%2Fidentity-bridge-staging.qa.spoton.sh%2Fdocs&author=datadog-user&hash=3VSNE6j%2B%2BD5s6uW76XzHrDGyB47LHXE3ixRaauaBO%2Bg%3D
+
+  - name: Staging service urls
+    icon: fas fa-link
+    displayData: *datagroup
+    items:
+      - title: identity-bridge
+        icon: fas fa-external-link-alt
+        url: https://identity-bridge-staging.qa.spoton.sh/docs
         
-      - title: prod url
-        icon: fas fas fa-external-link-alt
-      
-      - title: staging logs
+  - name: Staging logs
+    icon: fas fa-dog
+    displayData: *datagroup
+    items:
+      - title: identity-bridge
         icon: fas fa-dog
         url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aidentity-bridge
-
-
-      - title: prod logs
+  
+  - name: Prod logs
+    icon: fas fa-dog
+    displayData: *datagroup
+    items:
+      - title: identity-bridge
         icon: fas fa-dog
         url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Aidentity-bridge
