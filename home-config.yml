@@ -23,7 +23,7 @@ sections:
         url: https://192.168.1.201:9443/
       - title: Basic Infrastructure
         icon: hl-portainer
-        url: https://192.168.1.45:9443/
+        url: https://192.168.1.166:9443/
   - name: Virtualization / Infrastructure
     icon: fas fa-database
     items:
