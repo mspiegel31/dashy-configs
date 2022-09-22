@@ -29,6 +29,14 @@ pageInfo:
       path: 'http://docker-server-v2.localdomain:5000/'
 
 sections:
+  - name: Tools
+    icon: fas fa-network-wired
+    items:
+      - title: Core Services Jira Board
+        icon: si-jira
+        url: >-
+          https://spotonteam.atlassian.net/jira/software/c/projects/CSVC/boards/248
+
   - name: Monitoring
     icon: fas fa-network-wired
     items:
