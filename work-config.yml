@@ -69,7 +69,7 @@ sections:
         icon: fas fa-external-link-alt
         url: https://merchant-data-service-prod.us-east-1.prod.spoton.sh/docs
 
-      - title: merchant-data-service
+      - title: notification-service
         icon: fas fa-external-link-alt
         url: https://notification-service-prod.us-east-1.prod.spoton.sh/docs
       
@@ -127,8 +127,7 @@ sections:
 
       - title: payroll-service
         icon: si-datadog
-        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Apayment-stats-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663870724075&to_ts=1663871624075&live=true
-
+        url: https://app.datadoghq.com/logs?query=env%253Aprod%20service%253Apayroll-service
   - name: Staging service urls
     icon: fas fa-link
     displayData: *datagroup
