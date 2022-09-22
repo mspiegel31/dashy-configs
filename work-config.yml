@@ -63,7 +63,7 @@ sections:
       
       - title: identity-bridge
         icon: fas fa-external-link-alt
-        url: ''
+        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aidentity-bridge
       
       - title: merchant-data-service
         icon: fas fa-external-link-alt
