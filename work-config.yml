@@ -51,6 +51,40 @@ sections:
     items:
       - title: identity-bridge
         icon: fas fa-external-link-alt
+        url: ''
+      
+      - title: core-login-app
+        icon: fas fa-external-link-alt
+        url: https://login.spoton.com/home/
+      
+      - title: dishout-service
+        icon: fas fa-external-link-alt
+        url: https://dishout-service-prod.us-east-1.prod.spoton.sh/docs
+      
+      - title: e-gift-config-api
+        icon: fas fa-external-link-alt
+        url: https://egift-config-api-prod.us-east-1.prod.spoton.sh/docs
+      
+      - title: merchant-data-service
+        icon: fas fa-external-link-alt
+        url: https://merchant-data-service-prod.us-east-1.prod.spoton.sh/docs
+
+      - title: merchant-data-service
+        icon: fas fa-external-link-alt
+        url: https://notification-service-prod.us-east-1.prod.spoton.sh/docs
+      
+      - title: notification-service
+        icon: fas fa-external-link-alt
+        url: https://notification-service-prod.us-east-1.prod.spoton.sh/docs
+      
+      - title: payment-stats-service
+        icon: fas fa-external-link-alt
+        url: ''
+      
+      - title: payroll-service
+        icon: fas fa-external-link-alt
+        url: https://payroll-service-prod.us-east-1.prod.spoton.sh/docs
+  
   - name: Prod logs
     icon: si-datadog
     displayData: *datagroup
