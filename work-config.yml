@@ -73,6 +73,10 @@ sections:
         icon: si-kubernetes
         url: https://dashboard.us-east-1.prod.spoton.sh/#/overview?namespace=default
       
+      - title: Codefresh
+        icon: si-hellofresh
+        url: https://g.codefresh.io/projects/
+
       - title: core-services clickboard
         icon: si-datadog
         url: >-
