@@ -32,13 +32,17 @@ sections:
   - name: Tools
     icon: fas fa-network-wired
     items:
-      - title: Core Services Jira Board
+      - title: CSVC Jira
         icon: si-jira
         url: https://spotonteam.atlassian.net/jira/software/c/projects/CSVC/boards/248
 
-      - title: SpotOn Acronym Glosssary
+      - title: Acronym Glosssary
         icon: si-confluence
         url: https://spotonteam.atlassian.net/wiki/spaces/EM/pages/1990197323/Acronyms+Glossary+Dictionary
+
+      - title: Metabase
+        icon: si-metabase
+        url: https://metabase.us-east-1.data.spoton.sh/dashboard/375-merchant-landscape?status=Active&status=Pending%20Active&status=Pre-Cancellation
 
   - name: Monitoring
     icon: fas fa-network-wired
