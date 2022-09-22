@@ -44,8 +44,20 @@ sections:
         icon: si-metabase
         url: https://metabase.us-east-1.data.spoton.sh/dashboard/375-merchant-landscape?status=Active&status=Pending%20Active&status=Pre-Cancellation
 
+  - name: HR
+    items:
+      - title: concur
+        icon: si-concur
+        url: https://www.concursolutions.com/nui/signin?targetURL=%2Fhome 
 
+      - title: ADP
+        icon: fa fa-person-simple
+        url: https://online.adp.com/signin/v1/?APPID=WFNPortal&productId=80e309c3-7085-bae1-e053-3505430b5495&returnURL=https://workforcenow.adp.com/&callingAppId=WFN&TARGET=-SM-https://workforcenow.adp.com/theme/index.html 
   
+      - title: Lattice
+        icon: si-lattice
+        url: https://spoton.latticehq.com/
+
   - name: Infrastructure
     icon: fas fa-digital-tachograph
     items:
@@ -65,6 +77,20 @@ sections:
         icon: si-datadog
         url: >-
           https://app.datadoghq.com/dashboard/ga9-46m-hq2/clickboard-core?from_ts=1663700105960&to_ts=1663703705960&live=true
+
+  - name: HR
+    items:
+      - title: concur
+        icon: si-concur
+        url: https://www.concursolutions.com/nui/signin?targetURL=%2Fhome 
+
+      - title: ADP
+        icon: fa fa-person-simple
+        url: https://online.adp.com/signin/v1/?APPID=WFNPortal&productId=80e309c3-7085-bae1-e053-3505430b5495&returnURL=https://workforcenow.adp.com/&callingAppId=WFN&TARGET=-SM-https://workforcenow.adp.com/theme/index.html 
+  
+      - title: Lattice
+        icon: si-lattice
+        url: https://spoton.latticehq.com/
 
     # service monitoring
   - name: Prod service urls
