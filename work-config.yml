@@ -34,8 +34,11 @@ sections:
     items:
       - title: Core Services Jira Board
         icon: si-jira
-        url: >-
-          https://spotonteam.atlassian.net/jira/software/c/projects/CSVC/boards/248
+        url: https://spotonteam.atlassian.net/jira/software/c/projects/CSVC/boards/248
+
+      - title: SpotOn Acronym Glosssary
+        icon: si-confluence
+        url: https://spotonteam.atlassian.net/wiki/spaces/EM/pages/1990197323/Acronyms+Glossary+Dictionary
 
   - name: Monitoring
     icon: fas fa-network-wired
@@ -51,6 +54,14 @@ sections:
       - title: AWS account switcher
         icon: si-amazon
         url: 'https://d-90676ae83d.awsapps.com/start#/'
+
+      - title: Staging k8s
+        icon: si-kubernetes
+        url: https://dashboard.us-east-1.staging.spoton.sh/#/overview?namespace=default
+
+      - title: Prod k8s
+        icon: si-kubernetes
+        url: https://dashboard.us-east-1.prod.spoton.sh/#/overview?namespace=default
 
     # service monitoring
   - name: Prod service urls
