@@ -128,14 +128,46 @@ sections:
       - title: payroll-service
         icon: si-datadog
         url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Apayment-stats-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663870724075&to_ts=1663871624075&live=true
-        
+
   - name: Staging service urls
     icon: fas fa-link
     displayData: *datagroup
     items:
+      - title: auth-service
+        icon: fas fa-external-link-alt
+        url: https://auth-service-staging.qa.spoton.sh/
+      
+      - title: core-login-app
+        icon: fas fa-external-link-alt
+        url: https://qa-login.spoton.com/home/
+      
+      - title: dishout-service
+        icon: fas fa-external-link-alt
+        url: https://dishout-service-staging.qa.spoton.sh/docs
+        
+      - title: e-gift-config-api
+        icon: fas fa-external-link-alt
+        url: https://egift-config-api-staging.qa.spoton.sh/docs
+
       - title: identity-bridge
         icon: fas fa-external-link-alt
         url: https://identity-bridge-staging.qa.spoton.sh/docs
+      
+      - title: merchant-data-service
+        icon: fas fa-external-link-alt
+        url: https://merchant-data-service-staging.qa.spoton.sh/docs
+      
+      - title: notification-service
+        icon: fas fa-external-link-alt
+        url: https://notification-service-staging.qa.spoton.sh/docs
+
+      - title: payment-stats-service
+        icon: fas fa-external-link-alt
+        url: https://payment-stats-service-staging.qa.spoton.sh/docs
+      
+      - title: payment-stats-service
+        icon: fas fa-external-link-alt
+        url: https://payroll-service-staging.qa.spoton.sh/docs
         
   - name: Staging logs
     icon: si-datadog
