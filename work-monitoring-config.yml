@@ -22,7 +22,7 @@ x-display-data: &datagroup
     cols: 1
 
 pageInfo:
-  title: Work Service Monitoring
+  title: Work Links
   footerText: ''
 
 sections:
