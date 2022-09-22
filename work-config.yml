@@ -68,10 +68,13 @@ sections:
       - title: Staging k8s
         icon: si-kubernetes
         url: https://dashboard.us-east-1.staging.spoton.sh/#/overview?namespace=default
-
+        tags:
+          - kubernetes
       - title: Prod k8s
         icon: si-kubernetes
         url: https://dashboard.us-east-1.prod.spoton.sh/#/overview?namespace=default
+        tags:
+          - kubernetes
       
       - title: Codefresh
         icon: si-hellofresh
