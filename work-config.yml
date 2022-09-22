@@ -24,6 +24,9 @@ x-display-data: &datagroup
 pageInfo:
   title: Work Links
   footerText: ''
+  navLinks:
+    - title: Homelab
+      path: 'http://docker-server-v2.localdomain:5000/'
 
 sections:
   - name: Monitoring
