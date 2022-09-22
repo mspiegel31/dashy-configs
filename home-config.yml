@@ -16,6 +16,10 @@ appConfig:
   language: en
   enableFontAwesome: true
   routingMode: hash
+  webSearch:
+    disableWebSearch: false
+    searchEngine: google
+    openingMethod: newtab
 
 pageInfo:
   title: Homelab
