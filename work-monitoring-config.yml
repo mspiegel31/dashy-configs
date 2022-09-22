@@ -1,5 +1,9 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
 
+x-display-data: &datagroup
+      sortBy: alphabetical
+      cols: 1
+
 pageInfo:
   title: Work Service Monitoring
   footerText: ''
@@ -7,9 +11,7 @@ pageInfo:
 sections:
   - name: Prod service urls
     icon: fas fa-link
-    displayData: &datagroup
-      sortBy: alphabetical
-      cols: 1
+    displayData: *datagroup
     items:
       - title: identity-bridge
         icon: fas fa-external-link-alt
