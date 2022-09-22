@@ -1,0 +1,19 @@
+pageInfo:
+  title: Spoton
+  description: Links for work
+  footerText: ''
+
+sections:
+  - name: Monitoring
+    icon: fas fa-network-wired
+    items:
+      - title: core-services clickboard
+        icon: fas fa-dog
+        url: >-
+          https://app.datadoghq.com/dashboard/ga9-46m-hq2/clickboard-core?from_ts=1663700105960&to_ts=1663703705960&live=true
+  
+  - name: Infrastructure
+    icon: fas fa-digital-tachograph
+    items:
+      - title: AWS account switcher
+        icon: fa-database
