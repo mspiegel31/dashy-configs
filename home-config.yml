@@ -1,8 +1,25 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
 
+appConfig:
+  theme: nord
+  customColors:
+    material-dark-original:
+      primary: '#f36558'
+      background: '#39434C'
+      background-darker: '#eb615c'
+      material-light: '#f36558'
+      item-text-color: '#ff948a'
+      curve-factor: 5px
+  enableErrorReporting: true
+  layout: auto
+  iconSize: medium
+  language: en
+  enableFontAwesome: true
+  routingMode: hash
+
 pageInfo:
   title: Homelab
-  description: Homelab links
+  description: links for homelab
   footerText: ''
 
 sections:

@@ -1,12 +1,33 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
+appConfig:
+  theme: nord
+  customColors:
+    material-dark-original:
+      primary: '#f36558'
+      background: '#39434C'
+      background-darker: '#eb615c'
+      material-light: '#f36558'
+      item-text-color: '#ff948a'
+      curve-factor: 5px
+  enableErrorReporting: true
+  layout: auto
+  iconSize: medium
+  language: en
+  enableFontAwesome: true
+  routingMode: hash
+
 
 x-display-data: &datagroup
-      sortBy: alphabetical
-      cols: 1
+    sortBy: alphabetical
+    cols: 1
 
 pageInfo:
   title: Work Service Monitoring
   footerText: ''
+
+pages:
+  - name: Work Useful Links
+    path: work-useful-links.yml
 
 sections:
   - name: Prod service urls
