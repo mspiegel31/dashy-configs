@@ -1,6 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/ConfigSchema.json
+
 pageInfo:
   title: Spoton
   description: Links for work
+  navLinks:
+    - title: Homelab
+      path: 'http://docker-server-v2.localdomain:5000'
+      target: newtab
   footerText: ''
 
 sections:
