@@ -173,8 +173,34 @@ sections:
     icon: si-datadog
     displayData: *datagroup
     items:
-      - title: identity-bridge
+      - title: auth-service
         icon: si-datadog
-        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aidentity-bridge
-  
+        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aauth-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663871072422&to_ts=1663871972422&live=true
+        
+      - title: core-login-app
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aauth-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663871072422&to_ts=1663871972422&live=true
+        
+      - title: dishout-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Adishout-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663871134745&to_ts=1663872034745&live=true
+        
+      - title: e-gift-config-api
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aegift-config-api
 
+      - title: merchant-data-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Amerchant-data-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=desc&viz=stream&from_ts=1663871183633&to_ts=1663872083633&live=true
+
+      - title: notification-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Anotification-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=desc&viz=stream&from_ts=1663871200816&to_ts=1663872100816&live=true        
+
+      - title: payment-stats-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Astaging service%3Apayment-stats-service&cols=host%2Cservice&index=*&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663871239393&to_ts=1663872139393&live=true
+      
+      - title: payroll-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Apayroll-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663871274269&to_ts=1663872174269&live=true
