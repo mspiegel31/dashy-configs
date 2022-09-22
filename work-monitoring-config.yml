@@ -25,17 +25,35 @@ pageInfo:
   title: Work Service Monitoring
   footerText: ''
 
-pages:
-  - name: Work Useful Links
-    path: work-useful-links.yml
-
 sections:
+  - name: Monitoring
+    icon: fas fa-network-wired
+    items:
+      - title: core-services clickboard
+        icon: fas fa-dog
+        url: >-
+          https://app.datadoghq.com/dashboard/ga9-46m-hq2/clickboard-core?from_ts=1663700105960&to_ts=1663703705960&live=true
+  
+  - name: Infrastructure
+    icon: fas fa-digital-tachograph
+    items:
+      - title: AWS account switcher
+        icon: fa-database
+
+    # service monitoring
   - name: Prod service urls
     icon: fas fa-link
     displayData: *datagroup
     items:
       - title: identity-bridge
         icon: fas fa-external-link-alt
+  - name: Prod logs
+    icon: fas fa-dog
+    displayData: *datagroup
+    items:
+      - title: identity-bridge
+        icon: fas fa-dog
+        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Aidentity-bridge
 
   - name: Staging service urls
     icon: fas fa-link
@@ -53,10 +71,4 @@ sections:
         icon: fas fa-dog
         url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aidentity-bridge
   
-  - name: Prod logs
-    icon: fas fa-dog
-    displayData: *datagroup
-    items:
-      - title: identity-bridge
-        icon: fas fa-dog
-        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Aidentity-bridge
+
