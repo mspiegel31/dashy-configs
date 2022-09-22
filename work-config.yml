@@ -49,10 +49,6 @@ sections:
     icon: fas fa-link
     displayData: *datagroup
     items:
-      - title: identity-bridge
-        icon: fas fa-external-link-alt
-        url: ''
-      
       - title: core-login-app
         icon: fas fa-external-link-alt
         url: https://login.spoton.com/home/
@@ -64,6 +60,10 @@ sections:
       - title: e-gift-config-api
         icon: fas fa-external-link-alt
         url: https://egift-config-api-prod.us-east-1.prod.spoton.sh/docs
+      
+      - title: identity-bridge
+        icon: fas fa-external-link-alt
+        url: ''
       
       - title: merchant-data-service
         icon: fas fa-external-link-alt
@@ -89,10 +89,46 @@ sections:
     icon: si-datadog
     displayData: *datagroup
     items:
+      - title: auth-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Aauth-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663870119765&to_ts=1663871019765&live=true
+      
+      - title: core-login-app
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%253Aprod%20service%253Acore-login-app      
+      
+      - title: dishout-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Adishout-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=desc&viz=stream&from_ts=1663870197720&to_ts=1663871097720&live=true      
+      
+      - title: e-gift-config-api
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%253Aprod%20service%253Aegift-config-api
+      
       - title: identity-bridge
         icon: si-datadog
         url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Aidentity-bridge
+      
+      - title: merchant-data-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Amerchant-data-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=desc&viz=stream&from_ts=1663870284770&to_ts=1663871184770&live=true
+      
+      - title: merchant-data-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Anotification-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663870424067&to_ts=1663871324067&live=true
 
+      - title: notification-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Anotification-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663870697625&to_ts=1663871597625&live=true
+      
+      - title: payment-stats-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Apayment-stats-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663870724075&to_ts=1663871624075&live=true
+
+      - title: payroll-service
+        icon: si-datadog
+        url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Apayment-stats-service&cols=host%2Cservice&index=%2A&messageDisplay=inline&stream_sort=time%2Cdesc&viz=stream&from_ts=1663870724075&to_ts=1663871624075&live=true
+        
   - name: Staging service urls
     icon: fas fa-link
     displayData: *datagroup
