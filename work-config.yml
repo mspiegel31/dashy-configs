@@ -30,7 +30,7 @@ sections:
     icon: fas fa-network-wired
     items:
       - title: core-services clickboard
-        icon: fas fa-dog
+        icon: si-datadog
         url: >-
           https://app.datadoghq.com/dashboard/ga9-46m-hq2/clickboard-core?from_ts=1663700105960&to_ts=1663703705960&live=true
   
@@ -38,7 +38,7 @@ sections:
     icon: fas fa-digital-tachograph
     items:
       - title: AWS account switcher
-        icon: fa-database
+        icon: si-amazon
         url: 'https://d-90676ae83d.awsapps.com/start#/'
 
     # service monitoring
@@ -49,11 +49,11 @@ sections:
       - title: identity-bridge
         icon: fas fa-external-link-alt
   - name: Prod logs
-    icon: fas fa-dog
+    icon: si-datadog
     displayData: *datagroup
     items:
       - title: identity-bridge
-        icon: fas fa-dog
+        icon: si-datadog
         url: https://app.datadoghq.com/logs?query=env%3Aprod%20service%3Aidentity-bridge
 
   - name: Staging service urls
@@ -65,11 +65,11 @@ sections:
         url: https://identity-bridge-staging.qa.spoton.sh/docs
         
   - name: Staging logs
-    icon: fas fa-dog
+    icon: si-datadog
     displayData: *datagroup
     items:
       - title: identity-bridge
-        icon: fas fa-dog
+        icon: si-datadog
         url: https://app.datadoghq.com/logs?query=env%3Astaging%20service%3Aidentity-bridge
   
 
