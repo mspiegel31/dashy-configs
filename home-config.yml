@@ -55,7 +55,12 @@ sections:
       - title: PVE big
         icon: hl-proxmox
         url: https://192.168.1.40:8006/
+      
+      - title: Proxmox Backup Server
+        icon: hl-proxmox
+        url: https://192.168.1.202:8007/
         provider: Proxmox
+      
       - title: True NAS
         icon: hl-truenas
         url: https://192.168.1.238/
