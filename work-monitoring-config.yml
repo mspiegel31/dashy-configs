@@ -39,6 +39,7 @@ sections:
     items:
       - title: AWS account switcher
         icon: fa-database
+        url: 'https://d-90676ae83d.awsapps.com/start#/'
 
     # service monitoring
   - name: Prod service urls
