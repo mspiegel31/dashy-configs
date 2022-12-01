@@ -9,7 +9,7 @@ appConfig:
       item-text-color: '#ff948a'
       curve-factor: 5px
   enableErrorReporting: true
-  layout: auto
+  layout: vertical
   iconSize: medium
   language: en
   enableFontAwesome: true
@@ -49,6 +49,7 @@ appConfig:
 pageInfo:
   title: Homelab
   description: links for homelab
+  navLinks: []
   footerText: ''
 sections:
   - name: Network
@@ -92,7 +93,7 @@ sections:
         id: 2_3125_pvebig
       - title: Proxmox Backup Server
         icon: hl-proxmox
-        url: https://192.168.1.202:8007/
+        url: https://192.168.1.136:8007/
         provider: Proxmox
         id: 3_3125_proxmoxbackupserver
       - title: True NAS
@@ -103,6 +104,15 @@ sections:
         icon: hl-pikvm
         url: http://pikvm.localdomain/
         id: 5_3125_pikvm
+      - title: Truenas - backup
+        icon: hl-truenas
+        url: http://192.168.1.135/
+        provider: truenas
+        id: 6_3125_truenasbackup
+      - title: Compute Node KVM
+        icon: hl-mikrotik
+        url: http://192.168.1.179
+        id: 7_3125_computenodekvm
   - name: Applications
     icon: fas fa-folder-plus
     items:
@@ -112,17 +122,17 @@ sections:
         id: 0_1255_homeassistant
       - title: Photo Prism
         icon: hl-photoprism
-        url: http://192.168.1.201:2342/browse
+        url: http://192.168.1.201:2342/
         id: 1_1255_photoprism
       - title: syncthing
         icon: hl-syncthing
         url: http://192.168.1.201:8384/
         id: 2_1255_syncthing
-      - title: PiHole 1
-        icon: hl-pihole
-        url: http://192.168.1.170/admin/
-        id: 3_1255_pihole
       - title: PiHole 2
+        icon: hl-pihole
+        url: http://192.168.1.172/admin/
+        id: 3_1255_pihole
+      - title: PiHole 1
         icon: hl-pihole
         url: http://192.168.1.171/admin/
         id: 4_1255_pihole
@@ -134,3 +144,11 @@ sections:
         icon: hl-youtube
         url: http://192.168.1.201:8998/#/home
         id: 6_1255_youtubedl
+      - title: homelab rancher
+        icon: hl-rancher
+        url: https://dev-server.rancher.localdomain
+        id: 7_1255_homelabrancher
+      - title: homelab harvester
+        icon: hl-harvester
+        url: https://192.168.1.161/dashboard/
+        id: 8_1255_homelabharvester
