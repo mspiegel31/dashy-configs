@@ -93,7 +93,7 @@ sections:
         id: 2_3125_pvebig
       - title: Proxmox Backup Server
         icon: hl-proxmox
-        url: https://192.168.1.136:8007/
+        url: https://192.168.1.137:8007/
         provider: Proxmox
         id: 3_3125_proxmoxbackupserver
       - title: True NAS
@@ -138,17 +138,17 @@ sections:
         id: 4_1255_pihole
       - title: HiFiberry
         icon: fab fa-raspberry-pi
-        url: http://hifiberry.localdomain/
+        url: http://http://192.168.1.169/
         id: 5_1255_hifiberry
       - title: Youtube-DL
         icon: hl-youtube
         url: http://192.168.1.201:8998/#/home
         id: 6_1255_youtubedl
+      - title: single node rancher
+        icon: hl-rancher
+        url: https://192.168.1.201:4443
+        id: 7_1255_singlenoderancher
       - title: homelab rancher
         icon: hl-rancher
-        url: https://dev-server.rancher.localdomain
-        id: 7_1255_homelabrancher
-      - title: homelab harvester
-        icon: hl-harvester
-        url: https://192.168.1.161/dashboard/
-        id: 8_1255_homelabharvester
+        url: https://rancher.localdomain
+        id: 8_1255_homelabrancher
