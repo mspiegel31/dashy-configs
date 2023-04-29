@@ -98,7 +98,7 @@ sections:
         id: 3_3125_proxmoxbackupserver
       - title: True NAS
         icon: hl-truenas
-        url: https://192.168.1.238/
+        url: https://192.168.1.39/
         id: 4_3125_truenas
       - title: Pi KVM
         icon: hl-pikvm
@@ -138,7 +138,7 @@ sections:
         id: 4_1255_pihole
       - title: HiFiberry
         icon: fab fa-raspberry-pi
-        url: http://http://192.168.1.169/
+        url: http://192.168.1.10
         id: 5_1255_hifiberry
       - title: Youtube-DL
         icon: hl-youtube
