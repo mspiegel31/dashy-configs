@@ -80,22 +80,18 @@ sections:
   - name: App Servers
     icon: fas fa-server
     items:
-      - title: App Server
-        icon: hl-portainer
-        url: https://192.168.1.201:9443/
-        id: 0_1067_appserver
       - title: Basic Infrastructure
         icon: hl-portainer
         url: https://192.168.1.166:9443/
-        id: 1_1067_basicinfrastructure
+        id: 0_1067_basicinfrastructure
       - title: single node rancher
         icon: hl-rancher
         url: https://docker-server-v2.localdomain
-        id: 2_1067_singlenoderancher
+        id: 1_1067_singlenoderancher
       - title: homelab rancher
         icon: hl-rancher
         url: https://rancher.localdomain
-        id: 3_1067_homelabrancher
+        id: 2_1067_homelabrancher
   - name: Virtualization / Infrastructure
     icon: fas fa-database
     items:
@@ -126,29 +122,29 @@ sections:
         icon: hl-truenas
         url: https://192.168.1.39/
         id: 5_3125_truenas
-      - title: Pi KVM
-        icon: hl-pikvm
-        url: http://pikvm.localdomain/
-        id: 6_3125_pikvm
       - title: Truenas - backup
         icon: hl-truenas
         url: http://192.168.1.37/
         provider: truenas
-        id: 7_3125_truenasbackup
-      - title: Compute Node KVM
-        icon: hl-mikrotik
-        url: http://192.168.1.179
-        id: 8_3125_computenodekvm
+        id: 6_3125_truenasbackup
       - title: PBS - Main
         icon: hl-proxmox
         url: https://192.168.1.137:8007/
         provider: Proxmox
-        id: 9_3125_pbsmain
+        id: 7_3125_pbsmain
       - title: PBS - Alt
         icon: hl-proxmox
         url: https://192.168.1.31:8007/
         provider: Proxmox
-        id: 10_3125_pbsalt
+        id: 8_3125_pbsalt
+      - title: Pi KVM
+        icon: hl-pikvm
+        url: http://pikvm.localdomain/
+        id: 9_3125_pikvm
+      - title: Compute Node KVM
+        icon: hl-mikrotik
+        url: http://192.168.1.179
+        id: 10_3125_computenodekvm
   - name: Applications
     icon: fas fa-folder-plus
     items:
