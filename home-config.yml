@@ -55,19 +55,23 @@ sections:
   - name: Network
     icon: fas fa-network-wired
     items:
-      - title: OPNsense
+      - &ref_0
+        title: OPNsense
         icon: hl-opnsense
         url: https://192.168.1.1
         id: 0_746_opnsense
-      - title: UniFi dashboard
+      - &ref_1
+        title: UniFi dashboard
         icon: hl-unifi
         url: https://192.168.1.166:8443/
         id: 1_746_unifidashboard
-      - title: PiHole 1
+      - &ref_2
+        title: PiHole 1
         icon: hl-pihole
         url: http://192.168.1.171/admin/
         id: 2_746_pihole
-      - title: PiHole 2
+      - &ref_3
+        title: PiHole 2
         icon: hl-pihole
         url: http://192.168.1.172/admin/
         id: 3_746_pihole
@@ -77,94 +81,120 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
   - name: App Servers
     icon: fas fa-server
     items:
-      - title: Basic Infrastructure
+      - &ref_4
+        title: Basic Infrastructure
         icon: hl-portainer
         url: https://192.168.1.166:9443/
         id: 0_1067_basicinfrastructure
-      - title: single node rancher
+      - &ref_5
+        title: single node rancher
         icon: hl-rancher
         url: https://docker-server-v2.localdomain
         id: 1_1067_singlenoderancher
-      - title: homelab rancher
+      - &ref_6
+        title: homelab rancher
         icon: hl-rancher
         url: https://rancher.localdomain
         id: 2_1067_homelabrancher
+    filteredItems:
+      - *ref_4
+      - *ref_5
+      - *ref_6
   - name: Virtualization / Infrastructure
     icon: fas fa-database
     items:
-      - title: PVE Hyper
+      - &ref_7
+        title: PVE Hyper
         icon: hl-proxmox
         url: https://pve-hyper.localdomain:8006
         id: 0_3125_pvehyper
-      - title: PVE embedded
-        icon: hl-proxmox
-        url: https://pve-embedded.localdomain:8006/
-        provider: Proxmox
-        id: 1_3125_pveembedded
-      - title: PVE small
+      - &ref_8
+        title: PVE small
         icon: hl-proxmox
         url: https://192.168.1.42:8006/
         provider: Proxmox
-        id: 2_3125_pvesmall
-      - title: PVE big
+        id: 1_3125_pvesmall
+      - &ref_9
+        title: PVE big
         icon: hl-proxmox
         url: https://192.168.1.40:8006/
-        id: 3_3125_pvebig
-      - title: Proxmox Backup Server
-        icon: hl-proxmox
-        url: https://192.168.1.137:8007/
-        provider: Proxmox
-        id: 4_3125_proxmoxbackupserver
-      - title: True NAS
+        id: 2_3125_pvebig
+      - &ref_10
+        title: True NAS
         icon: hl-truenas
-        url: https://192.168.1.39/
-        id: 5_3125_truenas
-      - title: Truenas - backup
+        url: https://192.168.1.39:444
+        id: 3_3125_truenas
+      - &ref_11
+        title: Truenas - backup
         icon: hl-truenas
         url: http://192.168.1.37/
         provider: truenas
-        id: 6_3125_truenasbackup
-      - title: PBS - Main
+        id: 4_3125_truenasbackup
+      - &ref_12
+        title: PBS - Main
         icon: hl-proxmox
-        url: https://192.168.1.137:8007/
+        url: https://192.168.1.127:8007/
         provider: Proxmox
-        id: 7_3125_pbsmain
-      - title: PBS - Alt
+        id: 5_3125_pbsmain
+      - &ref_13
+        title: PBS - Alt
         icon: hl-proxmox
         url: https://192.168.1.31:8007/
         provider: Proxmox
-        id: 8_3125_pbsalt
-      - title: Pi KVM
+        id: 6_3125_pbsalt
+      - &ref_14
+        title: Pi KVM
         icon: hl-pikvm
         url: http://pikvm.localdomain/
-        id: 9_3125_pikvm
-      - title: Compute Node KVM
+        id: 7_3125_pikvm
+      - &ref_15
+        title: Compute Node KVM
         icon: hl-mikrotik
-        url: http://192.168.1.179
-        id: 10_3125_computenodekvm
+        url: http://192.168.1.11
+        id: 8_3125_computenodekvm
+    filteredItems:
+      - *ref_7
+      - *ref_8
+      - *ref_9
+      - *ref_10
+      - *ref_11
+      - *ref_12
+      - *ref_13
+      - *ref_14
+      - *ref_15
   - name: Applications
     icon: fas fa-folder-plus
     items:
-      - title: HiFiberry
+      - &ref_16
+        title: HiFiberry
         icon: fab fa-raspberry-pi
         url: http://192.168.1.10
         id: 0_1255_hifiberry
-      - title: Home Assistant
+      - &ref_17
+        title: Home Assistant
         icon: hl-home-assistant
-        url: http://192.168.1.189:8123/
+        url: http://192.168.1.163:8123/
         id: 1_1255_homeassistant
-      - title: Photo Prism
-        icon: hl-photoprism
-        url: http://192.168.1.201:2342/
-        id: 2_1255_photoprism
-      - title: syncthing
-        icon: hl-syncthing
-        url: http://192.168.1.201:8384/
-        id: 3_1255_syncthing
-      - title: Youtube-DL
+      - &ref_18
+        title: Nextcloud
+        icon: hl-nextcloud
+        url: http://192.168.1.202
+        id: 2_1255_nextcloud
+      - &ref_19
+        title: Youtube-DL
         icon: hl-youtube
-        url: http://192.168.1.201:8998/#/home
-        id: 4_1255_youtubedl
+        url: http://192.168.1.201
+        id: 3_1255_youtubedl
+    filteredItems:
+      - *ref_16
+      - *ref_17
+      - *ref_18
+      - *ref_19
